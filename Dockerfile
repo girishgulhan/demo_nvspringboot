@@ -1,3 +1,3 @@
-FROM openjdk:13-jdk-alpine
-ADD target/helloapp.jar helloapp.jar
-ENTRYPOINT ["java","jar","helloapp.jar"]
+FROM openjdk:11-jdk-alpine
+ADD target/nvspringboot.jar nvspringboot.jar
+ENTRYPOINT ["java","-jar","nvspringboot.jar"]
